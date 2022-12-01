@@ -1,0 +1,426 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://african/african_collada_rig.dae" type="PackedScene" id=1]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.912403
+height = 7.29922
+
+[sub_resource type="CapsuleShape" id=2]
+radius = 0.099264
+height = 0.794112
+
+[sub_resource type="CapsuleShape" id=3]
+radius = 0.0992637
+height = 0.794109
+
+[sub_resource type="CapsuleShape" id=4]
+radius = 0.090742
+height = 0.725936
+
+[sub_resource type="CapsuleShape" id=5]
+radius = 0.0907419
+height = 0.725935
+
+[sub_resource type="CapsuleShape" id=6]
+radius = 0.0992637
+height = 0.79411
+
+[sub_resource type="CapsuleShape" id=7]
+radius = 0.0992636
+height = 0.794109
+
+[sub_resource type="CapsuleShape" id=8]
+radius = 0.0907422
+height = 0.725938
+
+[sub_resource type="CapsuleShape" id=9]
+radius = 0.0907419
+height = 0.725935
+
+[sub_resource type="CapsuleShape" id=10]
+radius = 0.141407
+height = 1.13126
+
+[sub_resource type="CapsuleShape" id=11]
+radius = 0.141407
+height = 1.13126
+
+[sub_resource type="CapsuleShape" id=12]
+radius = 0.147279
+height = 1.17824
+
+[sub_resource type="CapsuleShape" id=13]
+radius = 0.147279
+height = 1.17823
+
+[sub_resource type="CapsuleShape" id=14]
+radius = 0.0776713
+height = 0.621371
+
+[sub_resource type="CapsuleShape" id=15]
+radius = 0.141407
+height = 1.13126
+
+[sub_resource type="CapsuleShape" id=16]
+radius = 0.141407
+height = 1.13126
+
+[sub_resource type="CapsuleShape" id=17]
+radius = 0.147279
+height = 1.17824
+
+[sub_resource type="CapsuleShape" id=18]
+radius = 0.147279
+height = 1.17823
+
+[sub_resource type="CapsuleShape" id=19]
+radius = 0.0776713
+height = 0.621371
+
+[sub_resource type="CapsuleShape" id=20]
+radius = 0.0865218
+height = 0.692175
+
+[sub_resource type="CapsuleShape" id=21]
+radius = 0.0776648
+height = 0.621318
+
+[sub_resource type="CapsuleShape" id=22]
+radius = 0.0982698
+height = 0.786158
+
+[sub_resource type="CapsuleShape" id=23]
+radius = 0.114682
+height = 0.917454
+
+[sub_resource type="CapsuleShape" id=24]
+radius = 0.0244973
+height = 0.195979
+
+[sub_resource type="CapsuleShape" id=25]
+radius = 0.0366619
+height = 0.293295
+
+[node name="african_collada_rig" instance=ExtResource( 1 )]
+
+[node name="Physical Bone root" type="PhysicalBone" parent="rig/Skeleton" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.56202 )
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.56202 )
+body_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.56202 )
+bone_name = "root"
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone root" index="0"]
+shape = SubResource( 1 )
+
+[node name="Physical Bone DEF-upper_armL" type="PhysicalBone" parent="rig/Skeleton" index="2"]
+transform = Transform( -0.842014, 0.295245, -0.45149, -0.439532, 0.109769, 0.891494, 0.312769, 0.949095, 0.0373427, 1.33417, 8.56444, -0.52202 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31116e-09, -1.73267e-07, 0.49632 )
+body_offset = Transform( 1, 5.96046e-08, 4.65661e-09, 0, 1, -1.11759e-08, 1.49012e-08, -3.72529e-09, 1, 0, 1.78814e-07, -0.49632 )
+bone_name = "DEF-upper_arm.L"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-upper_armL" index="0"]
+shape = SubResource( 2 )
+
+[node name="Physical Bone DEF-upper_armL001" type="PhysicalBone" parent="rig/Skeleton" index="3"]
+transform = Transform( -0.842014, 0.295245, -0.45149, -0.439532, 0.109769, 0.891494, 0.312769, 0.949095, 0.0373427, 1.78234, 7.67951, -0.559087 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.84893e-09, 3.69787e-09, 0.496319 )
+body_offset = Transform( 1, 5.96046e-08, 3.72529e-09, 5.96046e-08, 1, -7.45058e-09, -5.30854e-08, 7.45058e-09, 1, 0, 0, -0.496319 )
+bone_name = "DEF-upper_arm.L.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-upper_armL001" index="0"]
+shape = SubResource( 3 )
+
+[node name="Physical Bone DEF-forearmL" type="PhysicalBone" parent="rig/Skeleton" index="4"]
+transform = Transform( -0.842013, 0.187667, -0.505761, -0.439532, 0.30491, 0.844892, 0.31277, 0.933708, -0.174253, 2.23589, 6.85371, -0.498561 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42109e-14, -2.38419e-07, 0.453711 )
+body_offset = Transform( 1, 5.96046e-08, 0, 0, 1, 0, -7.45058e-09, 4.47035e-08, 1, 0, 2.38419e-07, -0.453711 )
+bone_name = "DEF-forearm.L"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-forearmL" index="0"]
+shape = SubResource( 4 )
+
+[node name="Physical Bone DEF-forearmL001" type="PhysicalBone" parent="rig/Skeleton" index="5"]
+transform = Transform( -0.842013, 0.187666, -0.505761, -0.439532, 0.30491, 0.844891, 0.312769, 0.933708, -0.174253, 2.69483, 6.08704, -0.340441 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.001e-06, 2.02824e-08, 0.453709 )
+body_offset = Transform( 1, -2.98023e-08, -1.04308e-07, 0, 1, -4.47035e-08, 0, 0, 1, -9.53674e-07, 0, -0.453709 )
+bone_name = "DEF-forearm.L.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-forearmL001" index="0"]
+shape = SubResource( 5 )
+
+[node name="Physical Bone DEF-upper_armR" type="PhysicalBone" parent="rig/Skeleton" index="6"]
+transform = Transform( -0.842013, -0.295245, 0.45149, 0.439532, 0.109769, 0.891494, -0.312769, 0.949095, 0.0373427, -1.33417, 8.56444, -0.52202 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57159e-08, -5.54677e-09, 0.496317 )
+body_offset = Transform( 1, -8.9407e-08, 3.1665e-08, 0, 1, 1.11759e-08, 1.11759e-08, -7.45058e-09, 1, 0, 0, -0.496317 )
+bone_name = "DEF-upper_arm.R"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-upper_armR" index="0"]
+shape = SubResource( 6 )
+
+[node name="Physical Bone DEF-upper_armR001" type="PhysicalBone" parent="rig/Skeleton" index="7"]
+transform = Transform( -0.842014, -0.295245, 0.45149, 0.439532, 0.109769, 0.891494, -0.312769, 0.949095, 0.0373427, -1.78234, 7.67951, -0.559087 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.92898e-08, -2.21778e-07, 0.496318 )
+body_offset = Transform( 1, 1.19209e-07, -7.91624e-08, 0, 1, -3.35276e-08, 5.30854e-08, -1.86265e-08, 1, 0, 2.38419e-07, -0.496318 )
+bone_name = "DEF-upper_arm.R.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-upper_armR001" index="0"]
+shape = SubResource( 7 )
+
+[node name="Physical Bone DEF-forearmR" type="PhysicalBone" parent="rig/Skeleton" index="8"]
+transform = Transform( -0.842014, -0.187667, 0.505761, 0.439532, 0.30491, 0.844891, -0.31277, 0.933708, -0.174253, -2.23589, 6.85371, -0.498562 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.65006e-07, 4.83598e-07, 0.45371 )
+body_offset = Transform( 1, 0, 2.6077e-08, 0, 1, -1.49012e-08, 2.6077e-08, -1.49012e-08, 1, -4.76837e-07, -4.76837e-07, -0.45371 )
+bone_name = "DEF-forearm.R"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-forearmR" index="0"]
+shape = SubResource( 8 )
+
+[node name="Physical Bone DEF-forearmR001" type="PhysicalBone" parent="rig/Skeleton" index="9"]
+transform = Transform( -0.842014, -0.187666, 0.505761, 0.439532, 0.30491, 0.844891, -0.312769, 0.933708, -0.174253, -2.69483, 6.08704, -0.34044 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86978e-07, -4.83598e-07, 0.453709 )
+body_offset = Transform( 1, -2.98023e-08, 2.23517e-08, 0, 1, 1.49012e-08, 3.72529e-09, 7.45058e-08, 1, 4.76837e-07, 4.76837e-07, -0.453709 )
+bone_name = "DEF-forearm.R.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-forearmR001" index="0"]
+shape = SubResource( 9 )
+
+[node name="Physical Bone DEF-thighL" type="PhysicalBone" parent="rig/Skeleton" index="10"]
+transform = Transform( 0.989662, -0.0761698, -0.121522, 0.114375, -0.0920657, 0.989162, -0.0865332, -0.992837, -0.0824022, 0.642956, 5.3939, -0.012221 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.48954e-07, -5.43368e-08, 0.707036 )
+body_offset = Transform( 1, 0, 1.49012e-08, 1.49012e-08, 1, -7.45058e-09, -1.30385e-08, 1.49012e-08, 1, 2.38419e-07, 5.96046e-08, -0.707036 )
+bone_name = "DEF-thigh.L"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-thighL" index="0"]
+shape = SubResource( 10 )
+
+[node name="Physical Bone DEF-thighL001" type="PhysicalBone" parent="rig/Skeleton" index="11"]
+transform = Transform( 0.989662, -0.0761698, -0.121522, 0.114375, -0.0920656, 0.989162, -0.0865332, -0.992837, -0.0824022, 0.814797, 3.99516, 0.104302 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.08344e-07, -1.19209e-07, 0.707036 )
+body_offset = Transform( 1, 0, 1.53668e-08, 0, 1, 0, -1.35042e-08, 1.49012e-08, 1, -1.19209e-07, 1.19209e-07, -0.707036 )
+bone_name = "DEF-thigh.L.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-thighL001" index="0"]
+shape = SubResource( 11 )
+
+[node name="Physical Bone DEF-shinL" type="PhysicalBone" parent="rig/Skeleton" index="12"]
+transform = Transform( 0.989662, -0.115284, -0.0853188, 0.114375, 0.275475, 0.95448, -0.0865337, -0.954372, 0.285813, 0.963546, 2.59291, -0.0479087 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.21953e-07, 1.5712e-08, 0.736397 )
+body_offset = Transform( 1, 1.49012e-08, 3.72529e-09, 0, 1, 5.96046e-08, 0, 1.19209e-07, 1, 1.19209e-07, -5.96046e-08, -0.736397 )
+bone_name = "DEF-shin.L"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-shinL" index="0"]
+shape = SubResource( 12 )
+
+[node name="Physical Bone DEF-shinL001" type="PhysicalBone" parent="rig/Skeleton" index="13"]
+transform = Transform( 0.989662, -0.115284, -0.0853189, 0.114375, 0.275475, 0.95448, -0.0865336, -0.954372, 0.285813, 1.0892, 1.18716, -0.468853 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.89866e-15, -1.94526e-07, 0.736397 )
+body_offset = Transform( 1, 1.49012e-08, 0, -7.45058e-09, 1, -5.96046e-08, 1.67638e-08, 0, 1, 0, 2.38419e-07, -0.736397 )
+bone_name = "DEF-shin.L.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-shinL001" index="0"]
+shape = SubResource( 13 )
+
+[node name="Physical Bone DEF-footL" type="PhysicalBone" parent="rig/Skeleton" index="14"]
+transform = Transform( 0.96915, -0.0774088, -0.234003, 1.0379e-05, -0.949389, 0.314103, -0.246475, -0.304416, -0.9201, 1.24291, 0.362296, -0.321997 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.30783e-07, -3.47218e-08, 0.388357 )
+body_offset = Transform( 1, -1.49012e-08, -2.98023e-08, 7.45058e-09, 1, 8.9407e-08, 0, 5.96046e-08, 1, -1.19209e-07, 0, -0.388357 )
+bone_name = "DEF-foot.L"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-footL" index="0"]
+shape = SubResource( 14 )
+
+[node name="Physical Bone DEF-thighR" type="PhysicalBone" parent="rig/Skeleton" index="15"]
+transform = Transform( 0.989662, 0.0761698, 0.121522, -0.114375, -0.0920657, 0.989162, 0.0865332, -0.992837, -0.0824022, -0.642956, 5.3939, -0.012221 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48954e-07, -5.43368e-08, 0.707036 )
+body_offset = Transform( 1, 0, -1.49012e-08, -1.49012e-08, 1, -7.45058e-09, 1.30385e-08, 1.49012e-08, 1, -2.38419e-07, 5.96046e-08, -0.707036 )
+bone_name = "DEF-thigh.R"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-thighR" index="0"]
+shape = SubResource( 15 )
+
+[node name="Physical Bone DEF-thighR001" type="PhysicalBone" parent="rig/Skeleton" index="16"]
+transform = Transform( 0.989662, 0.0761698, 0.121522, -0.114375, -0.0920656, 0.989162, 0.0865332, -0.992837, -0.0824022, -0.814797, 3.99516, 0.104302 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.08344e-07, -1.19209e-07, 0.707036 )
+body_offset = Transform( 1, 0, -1.53668e-08, 0, 1, 0, 1.35042e-08, 1.49012e-08, 1, 1.19209e-07, 1.19209e-07, -0.707036 )
+bone_name = "DEF-thigh.R.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-thighR001" index="0"]
+shape = SubResource( 16 )
+
+[node name="Physical Bone DEF-shinR" type="PhysicalBone" parent="rig/Skeleton" index="17"]
+transform = Transform( 0.989662, 0.115284, 0.0853188, -0.114375, 0.275475, 0.95448, 0.0865337, -0.954372, 0.285813, -0.963546, 2.59291, -0.0479087 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21953e-07, 1.5712e-08, 0.736397 )
+body_offset = Transform( 1, -1.49012e-08, -3.72529e-09, 0, 1, 5.96046e-08, 0, 1.19209e-07, 1, -1.19209e-07, -5.96046e-08, -0.736397 )
+bone_name = "DEF-shin.R"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-shinR" index="0"]
+shape = SubResource( 17 )
+
+[node name="Physical Bone DEF-shinR001" type="PhysicalBone" parent="rig/Skeleton" index="18"]
+transform = Transform( 0.989662, 0.115284, 0.0853189, -0.114375, 0.275475, 0.95448, 0.0865336, -0.954372, 0.285813, -1.0892, 1.18716, -0.468852 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19209e-07, -7.53166e-08, 0.736397 )
+body_offset = Transform( 1, -1.49012e-08, 0, 7.45058e-09, 1, -5.96046e-08, -1.67638e-08, 0, 1, 1.19209e-07, 1.19209e-07, -0.736397 )
+bone_name = "DEF-shin.R.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-shinR001" index="0"]
+shape = SubResource( 18 )
+
+[node name="Physical Bone DEF-footR" type="PhysicalBone" parent="rig/Skeleton" index="19"]
+transform = Transform( 0.96915, 0.0774087, 0.234003, -1.04481e-05, -0.949389, 0.314103, 0.246475, -0.304416, -0.9201, -1.24291, 0.362295, -0.321997 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.64568e-08, 0.388357 )
+body_offset = Transform( 1, 0, 0, 7.45058e-09, 1, 5.96046e-08, 1.49012e-08, 5.96046e-08, 1, 0, -5.96046e-08, -0.388357 )
+bone_name = "DEF-foot.R"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-footR" index="0"]
+shape = SubResource( 19 )
+
+[node name="Physical Bone DEF-spine" type="PhysicalBone" parent="rig/Skeleton" index="20"]
+transform = Transform( 1, 0, 0, 0, -0.249639, -0.968339, 0, 0.968339, -0.249639, 0, 6.15921, -0.205762 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.38419e-07, 0.432609 )
+body_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.38419e-07, -0.432609 )
+bone_name = "DEF-spine"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-spine" index="0"]
+shape = SubResource( 20 )
+
+[node name="Physical Bone DEF-spine001" type="PhysicalBone" parent="rig/Skeleton" index="21"]
+transform = Transform( 1, 0, 0, 0, -0.122954, -0.992412, 0, 0.992412, -0.122954, 0, 6.9635, -0.0500197 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.388324 )
+body_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.388324 )
+bone_name = "DEF-spine.001"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-spine001" index="0"]
+shape = SubResource( 21 )
+
+[node name="Physical Bone DEF-spine002" type="PhysicalBone" parent="rig/Skeleton" index="22"]
+transform = Transform( 1, 0, 0, 0, 0.0318127, -0.999494, 0, 0.999494, 0.0318126, 0, 7.83998, -0.017905 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49012e-08, 0.491349 )
+body_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.49012e-08, -0.491349 )
+bone_name = "DEF-spine.002"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-spine002" index="0"]
+shape = SubResource( 22 )
+
+[node name="Physical Bone DEF-spine003" type="PhysicalBone" parent="rig/Skeleton" index="23"]
+transform = Transform( 1, -5.00834e-18, -6.08034e-18, -5.00833e-18, 0.191561, -0.981481, 6.08034e-18, 0.981481, 0.191561, 3.48651e-18, 8.89387, -0.143379 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.33602e-25, 1.0212e-07, 0.573409 )
+body_offset = Transform( 1, 0, 9.30578e-25, 0, 1, 2.98023e-08, -7.23783e-25, 0, 1, 0, -1.19209e-07, -0.573409 )
+bone_name = "DEF-spine.003"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-spine003" index="0"]
+shape = SubResource( 23 )
+
+[node name="Physical Bone DEF-spine004" type="PhysicalBone" parent="rig/Skeleton" index="24"]
+transform = Transform( 1, -2.38418e-07, -4.1359e-25, -8.22291e-08, -0.344894, -0.938642, 2.2379e-07, 0.938642, -0.344895, 5.68434e-14, 9.57163, -0.210976 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.68434e-14, 2.38419e-07, 0.122487 )
+body_offset = Transform( 1, 0, 0, 0, 1, 0, -1.42109e-14, 0, 1, -5.68434e-14, -2.38419e-07, -0.122487 )
+bone_name = "DEF-spine.004"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-spine004" index="0"]
+shape = SubResource( 24 )
+
+[node name="Physical Bone DEF-spine005" type="PhysicalBone" parent="rig/Skeleton" index="25"]
+transform = Transform( 1, 2.38419e-07, 1.77636e-15, 7.84953e-08, -0.329233, -0.944249, -2.25126e-07, 0.944249, -0.329233, 5.65178e-14, 9.85969, -0.108379 )
+joint_type = 1
+joint_offset = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.30249e-15, -5.46305e-09, 0.18331 )
+body_offset = Transform( 1, 0, -7.10543e-15, 0, 1, 2.98023e-08, 0, 0, 1, 0, 0, -0.18331 )
+bone_name = "DEF-spine.005"
+joint_constraints/bias = 0.3
+joint_constraints/damping = 1.0
+joint_constraints/impulse_clamp = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="rig/Skeleton/Physical Bone DEF-spine005" index="0"]
+shape = SubResource( 25 )
